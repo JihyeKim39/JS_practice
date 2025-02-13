@@ -1,7 +1,7 @@
 const clock = document.querySelector("h2#clock"); //html 불러오기
 
-//querySelector() 는 괄호안에 인자로 넣은 값과 일치하는 요소를 찾아서 
-// 반환한다. 일치하는 요소가 없으면 null을 반환한다. 
+//querySelector() 는 괄호안에 인자로 넣은 값과 일치하는 요소를 찾아서 반환한다. 
+//일치하는 요소가 없으면 null을 반환한다. 
 // 괄호안에는 String(문자열) 형만 넣을 수 있고, 
 // 유효한 CSS 선택자를 넣어야한다.
 
