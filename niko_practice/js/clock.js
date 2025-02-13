@@ -10,12 +10,6 @@ function getClock(){ // 시계가 작동되는 함수 만들어보기
   const date = new Date(); //date 라는 상수 만들고
   //이 코드를 실행하면, 호출하는 당시의 초, 시간, 등 전부 가져올 수 있는 것이다
 
-//querySelector() 는 괄호안에 인자로 넣은 값과 일치하는 요소를 찾아서 
-// 반환한다. 일치하는 요소가 없으면 null을 반환한다. 
-// 괄호안에는 String(문자열) 형만 넣을 수 있고, 
-// 유효한 CSS 선택자를 넣어야한다.
-  
-
   const hours = String(date.getHours()).padStart(2,"0");
   const minutes = String(date.getMinutes()).padStart(2,"0");
   const seconds = String(date.getSeconds()).padStart(2,"0");  
