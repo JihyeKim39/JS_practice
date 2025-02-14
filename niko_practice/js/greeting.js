@@ -117,3 +117,44 @@ const divideResult = calculator.divide(multiResult,5);
 const minusResult = calculator.minus(10,divideResult);
 
 console.log(multiResult); //값 구하기 
+
+
+//내가 술을 마실 수 있는 나이인지 확인해주는 계산기 만들어보기
+
+//prompt= 사용자에게 창을 띄울 수 있도록 해준다 
+//prompt= 하나는 message(문자),다른 하나는 default 넣어주기
+
+
+//Conditionals
+const ageNew = prompt("How old are you?");
+ //variable (변수)의 type을 알아보는 방법
+console.log(typeof ageNew);
+
+//type 변경하는 방법 (ex. string -> number) = parseInt 쓰면 된다
+console.log(typeof "15" ,typeof parseInt("15")); //string -> number
+
+console.log(ageNew, parseInt(ageNew));
+
+//parseInt 후, ageNew의 형태가 number형이 아니라면 메시지 창을 띄울거다
+const agePar = parseInt(prompt("How old are you?"));
+console.log(agePar);
+
+//if 사용자가 숫자로(number)입력하지 않은경우, agePar를 다시 입력하라고 할거임
+//if age is NaN, then i'm gonna do another work
+//else(아니면) 또 다른 작업을 할거야
+
+console.log(isNaN(agePar));
+//agePar의 값이 숫자여야함 isNah는, 숫자면 ture /아니면 false
+
+// if (condition){
+//   condition === true  
+// -> 만약, 조건이 이 참이면 {중괄호}안에 있는게 실행됨
+// } else{아닐 경우에 실행되는 것}
+
+if (isNaN(agePar)){
+  console.log("Please write a number");
+} else if (agePar < 18){
+  console.log("you are too young");
+} else {
+  console.log("you can drink");
+}
